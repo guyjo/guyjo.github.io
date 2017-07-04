@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width"/>
         <style>
             .container {
                 font-family: Arial;
@@ -7,27 +9,39 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                flex: 1;
+                position: absolute;
+                height: 100%;
+                width: 100%;
             }
             .logo {
-                width: 30%;
+                width: 300pt;
             }
             .title {
-                font-size: 24;
+                font-size: 2em;
                 margin: 5% 0
             }
             .subtitle {
-                font-size: 16
+                font-size: 1.2em;
+            }
+            @media screen and (min-width: 0px) and (max-width: 500px) {
+                .logo {
+                    width: 200pt;
+                }
             }
 
         </style>
     </head>
 <body class="container">
-<img class="logo" src="/logo.png"/>
-<span class="title">
-coming soon
-</span>
-<span class="subtitle">
-not soon enough? contact guy@kandco.co
-</span>
+    <img class="logo" src="/logo.png"/>
+    <span class="title">
+        coming soon
+    </span>
+    <span class="subtitle">
+        not soon enough?
+    </span>
+    <span class="subtitle">
+        contact guy@kandco.co
+    </span>
 </body>
 </html>
